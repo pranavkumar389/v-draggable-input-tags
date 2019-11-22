@@ -15,7 +15,6 @@ $warn: #ffb648;
 
 [class^="ti-icon-"], [class*=" ti-icon-"] {
   font-family: 'icomoon' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -89,7 +88,7 @@ div.v-draggable-input-tags.disabled {
   display: flex;
   padding: 3px 5px;
   margin: 2px;
-  font-size: .85em;
+  font-size: 14px;
 
   &:focus {
     outline: none;
@@ -119,7 +118,7 @@ div.v-draggable-input-tags.disabled {
     margin-left: 2px;
     display: flex;
     align-items: center;
-    font-size: 1.15em;
+    font-size: 16px;
 
     i {
       cursor: pointer;
@@ -140,7 +139,7 @@ div.v-draggable-input-tags.disabled {
   flex: 1 0 auto;
   padding: 3px 5px;
   margin: 2px;
-  font-size: .85em;
+  font-size: 14px;
 
   input {
     flex: 1 0 auto;
