@@ -7,8 +7,18 @@
       @tags-changed="newTags => tags = newTags"
       :isDraggable="true"
       placeholder="Add new option"
-      :allowEditTags="true"
-      />
+      :allowEditTags="true">
+      <div slot="tag-actions" class="ti-actions" slot-scope="props">
+        <i class="fa fa-close"
+          v-show="!props.edit"
+          @click="props.performDelete(props.index);">
+        </i>
+        <i class="fa fa-undo"
+          v-show="props.edit"
+          @click="props.cancelEdit(props.index);">
+        </i>
+      </div>
+      </v-draggable-input-tags>
   </div>
 </template>
 

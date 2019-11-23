@@ -108,15 +108,13 @@
             <i
               v-if="!$scopedSlots['tag-actions']"
               v-show="tagsEditStatus[index]"
-              class="fa fa-undo"
-              aria-hidden="true"
+              class="ti-icon-undo"
               @click="cancelEdit(index)"
             />
             <i
               v-if="!$scopedSlots['tag-actions']"
               v-show="!tagsEditStatus[index]"
-              class="fa fa-times"
-              aria-hidden="true"
+              class="ti-icon-close"
               @click="performDeleteTag(index)"
             />
             <slot
